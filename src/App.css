@@ -52,5 +52,6 @@ div {
 button {
   font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
-  margin: 15px;
+  margin-top: 15px;
+  margin-right: 10px;
 }
