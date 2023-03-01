@@ -25,7 +25,11 @@ class Fruit extends React.Component {
                 this.setFruitHandler(genus);
                 this.UpdateList(genus);
             })
-            .catch(alert("Fruit Genus spelled wrong or does not exist. Try Again."));
+            .catch(error => {
+                if (error) { 
+                    alert("This fruit genus does not exist or is spelled incorrectly. Try again.")
+                }
+             })
     }
 
     UpdateList(genus) {
@@ -50,7 +54,11 @@ class Fruit extends React.Component {
                         }
                         )})
                     this.setStateHandler(fruitData)})
-            .catch(error => "Cannot find fruit genus. Find another.");
+            .catch(error => { 
+                if (error) { 
+                    alert("Could not find fruit genus, try another.")
+                }
+            });
     }
 
     setFruitHandler(fruit) {
