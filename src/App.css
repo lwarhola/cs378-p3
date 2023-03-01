@@ -13,15 +13,10 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: 22px;
 }
 
 .App-link {
@@ -35,4 +30,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+div {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px;
+}
+.fruitName {
+  font-size: 17px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.row {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.titles {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+button {
+  margin-right: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
 }
